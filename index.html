@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胸部CT智能诊断系统</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster:wght@700&family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onclick="goHome(event)">
+
+    <div class="fixed-header">
+        <img src="logo.png" alt="Logo">
+        <h1>胸部CT智能诊断系统</h1>
+    </div>
+
+    <div class="cover-screen" id="cover-screen">
+        <img src="logo.png" alt="Logo">
+        <h1>LungAI  胸部CT智能诊断系统</h1>
+        <h2>您的智能医疗助手</h2>
+        <button onclick="showButtons()">开始探索</button>
+    </div>
+
+    <div class="button-container" id="button-container">
+        <button onclick="showContent('project')">项目设计说明</button>
+        <button onclick="showContent('core-components')">核心构成</button>
+        <button onclick="showContent('ai-history')">AI的发展历程</button>
+        <button onclick="showContent('ai-reliability')">AI诊断的可靠性</button>
+        <button onclick="showContent('gallery')">项目实体图展示</button>
+        <a href="https://aistudio.baidu.com/community/app/171406/webUI?source=appMineRecent" target="_blank">
+            <button>AI问诊</button>
+        </a>
+
+
+
+    </div>
+
+    <div class="content-section" id="core-components">
+
+        <h2>核心构成</h2>
+        <div class="core-components">
+            <div class="core-component">
+                <h3>核心构成1-算法</h3>
+                <p>&nbsp;&nbsp;项目基于长和算法可视化开发平台研究的CT检测算法，使用3D-CNN模型，实现对肺炎，肺不张，心脏肿大等疾病的异常检测及定位。</p>
+            </div>
+            <div class="core-component">
+                <h3>核心构成2-硬件</h3>
+                <p>&nbsp;&nbsp;项目采用云边端技术架构，将算法部署至华为国产Atlas200IDK A2开发者套件中通过叶进行检测推理操作降低云端运算压力。</p>
+            </div>
+            <div class="core-component">
+                <h3>核心构成3-软件</h3>
+                <p>&nbsp;&nbsp;项目针对医生和患者分别打造了qt端及APP端，以及用于宣传的web网页。多端交互，关生可进行推理操作，患老查找检测报告。</p>
+            </div>
+            <div class="core-component">
+                <h3>核心构成4-后端</h3>
+                <p>&nbsp;&nbsp;项目采用河南省鲲鹏服务器保障数据安全，运用高并发管理能力实现微秒级延迟。通过海量并发高弹性管理前端数据。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="project">
+
+        <h2>项目设计说明</h2>
+        <p>本项目旨在利用先进的计算机视觉技术和深度学习算法，对胸部CT图像进行智能分析，以辅助医生进行疾病诊断。项目主要包括以下几个部分：</p>
+        <div class="highlight">
+            <p>1. 数据采集和处理：从各大医院和医疗机构获取大量胸部CT图像，并进行标注和预处理。</p>
+            <p>2. 算法开发：基于卷积神经网络（CNN）等深度学习技术，开发高效的疾病检测算法。</p>
+            <p>3. 系统集成：将算法嵌入到智能诊断系统中，实现自动化检测和结果展示。</p>
+            <p>4. 用户界面设计：为医生和患者设计友好的操作界面，提供清晰的检测结果和辅助信息。</p>
+        </div>
+        <blockquote>
+            <p>智能诊断系统的目标是提升胸部CT图像分析的效率和准确性，为医生提供可靠的辅助决策工具。</p>
+        </blockquote>
+    </div>
+
+    <div class="content-section" id="ai-history">
+
+        <h2>AI的发展历程</h2>
+        <p>人工智能的发展经历了多个阶段，从早期的规则引擎到后来的机器学习，再到深度学习和神经网络的应用。以下是AI在医学影像分析领域的重要进展：</p>
+        <div class="highlight">
+            <p>1. 规则引擎：早期的医疗影像分析系统依赖于规则和专家系统，但灵活性和准确性有限。</p>
+            <p>2. 机器学习：随着数据量的增加，传统的机器学习方法如支持向量机（SVM）和随机森林被应用于医学影像分析。</p>
+            <p>3. 深度学习：近年来，卷积神经网络（CNN）等深度学习技术的出现，使得医学影像分析的准确性大幅提升。</p>
+        </div>
+    </div>
+
+    <div class="content-section" id="ai-reliability">
+
+        <h2>AI诊断的可靠性</h2>
+        <p>AI在医学影像分析中的可靠性是一个关键问题。为了提高AI诊断系统的可靠性，通常会采取以下措施：</p>
+        <div class="highlight">
+            <p>1. 大量标注数据：使用大量标注的医学图像数据进行训练，确保模型的泛化能力。</p>
+            <p>2. 多轮验证：通过不同的验证集和交叉验证方法评估模型性能，减少过拟合风险。</p>
+            <p>3. 专家评审：结合医生的反馈和意见，不断优化和调整算法。</p>
+        </div>
+        <blockquote>
+            <p>AI诊断系统能够提供可靠的诊断结果，但应作为医生的辅助工具，而非完全替代。</p>
+        </blockquote>
+    </div>
+
+    <div class="content-section" id="gallery">
+
+        <h2>项目实体图展示</h2>
+        <div class="image-gallery">
+            <img src="image1.jpg" alt="项目图1">
+            <img src="image2.jpg" alt="项目图2">
+            <img src="image3.jpg" alt="项目图3">
+            <img src="image4.jpg" alt="项目图4">
+        </div>
+    </div>
+
+
+
+
+<div class="content-section" id="ai-consultation">
+
+    <h2>AI问诊</h2>
+
+    <div class="chatbox-body" id="chatbox-body">
+        <div class="chat-message ai-message">
+            <img src="ai-avatar.png" class="avatar" alt="AI Avatar">
+            <span>你好，早日康复，请问您有什么症状？</span>
+        </div>
+    </div>
+    <div class="chatbox-footer">
+        <input type="text" id="user-input" placeholder="输入您的问题..." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">发送</button>
+    </div>
+
+</div>
+
+
+
+
+    <footer>
+        <p>&copy; 2024 胸部CT智能诊断系统. 保留所有权利.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        function goHome(event) {
+            if (event.target === document.body) {
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('show');
+                });
+                document.getElementById('button-container').classList.add('show');
+            }
+        }
+
+        // 显示按钮
+        function showButtons() {
+            document.getElementById('cover-screen').classList.add('hidden');
+            document.getElementById('button-container').classList.add('show');
+        }
+
+        // 显示指定内容
+        function showContent(sectionId) {
+            document.getElementById('button-container').classList.remove('show');
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('show');
+            });
+            document.getElementById(sectionId).classList.add('show');
+        }
+
+
+
+        function typeEffect(element, text, index = 0) {
+            if (index < text.length) {
+                element.textContent = `AI: ${text.slice(0, index + 1)}`;
+                setTimeout(() => typeEffect(element, text, index + 1), 100); // 每100毫秒显示一个字符
+            }
+        }
+
+
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+
+
+
+        // 打开聊天窗口
+        function showChatbox() {
+            document.getElementById('chatbox').classList.remove('hidden');
+        }
+
+        // 关闭聊天窗口
+        function closeChatbox() {
+            document.getElementById('chatbox').classList.add('hidden');
+        }
+
+        // 发送消息
+function addMessage(role, content) {
+    const chatboxBody = document.getElementById('chatbox-body');
+    const messageElement = document.createElement('div');
+    messageElement.classList.add('chat-message', role === 'user' ? 'user-message' : 'ai-message');
+
+    // 创建头像和文本
+    const avatar = document.createElement('img');
+    avatar.src = role === 'user' ? 'user-avatar.png' : 'ai-avatar.png';
+    avatar.className = 'avatar';
+
+    const textElement = document.createElement('span');
+    textElement.textContent = content;
+
+    // 根据角色调整头像和文本的顺序
+    if (role === 'user') {
+        messageElement.appendChild(textElement);
+        messageElement.appendChild(avatar);
+    } else {
+        messageElement.appendChild(avatar);
+        messageElement.appendChild(textElement);
+    }
+
+    chatboxBody.appendChild(messageElement);
+    chatboxBody.scrollTop = chatboxBody.scrollHeight; // 自动滚动到最新消息
+}
+
+function sendMessage() {
+    const userInput = document.getElementById('user-input').value;
+
+    if (userInput.trim() === "") {
+        alert("请输入您的问题");
+        return;
+    }
+
+    // 使用 addMessage 显示用户消息在聊天框中
+    addMessage('user', userInput);
+
+    // 清空输入框
+    document.getElementById('user-input').value = "";
+
+    // 调用 Python 后端的 API (通过 pywebview)
+    window.pywebview.api.send_prompt(userInput).then(function(result) {
+        // 使用 addMessage 显示 AI 返回的消息
+        addMessage('ai', result);
+    }).catch(function(error) {
+        console.error('Error:', error);
+    });
+}
+
+
+    </script>
+</body>
+</html>
